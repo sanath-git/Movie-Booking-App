@@ -1,5 +1,6 @@
 import { Button } from "@material-ui/core";
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 class Header extends Component {
   render() {
@@ -10,13 +11,22 @@ class Header extends Component {
           alt="Logo"
           className="logo"
         />
-        {this.props.isDetails ? (
-          <Button variant="contained" color="primary">
-            Book Now
+        <div className="buttonContainer">
+          {this.props.isDetails ? (
+            <Button
+              className="bookNowButton"
+              variant="contained"
+              color="primary"
+            >
+              Book Now
+            </Button>
+          ) : (
+            ""
+          )}
+          <Button className="loginLogoutButton" variant="contained">
+            LOGIN
           </Button>
-        ) : (
-          ""
-        )}
+        </div>
       </div>
     );
   }

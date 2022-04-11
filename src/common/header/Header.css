@@ -11,6 +11,9 @@
   background-color: #ff7f7f;
   animation: rotate 8s infinite linear;
 }
+.bookNowButton{
+  margin-right: 10px !important;
+}
 @keyframes rotate {
   from {
     transform: rotatey(0deg);
