@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./index.css";
-import BookShow from "./screens/bookshow/BookShow";
+
 import Detail from "./screens/Details/Detail";
 import Home from "./screens/home/Home";
 

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import StarBorderIcon from "@material-ui/icons/StarBorder";
-import { Typography } from "@material-ui/core";
 
 const RatingStars = () => {
   const [ratedValue, setRatedValue] = useState(-1);
