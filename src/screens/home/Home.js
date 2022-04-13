@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Header from "../../common/header/Header";
 import "./Home.css";
 import SingleLineImageList from "./SingleLineImageList";
 import moviesData from "../../common/moviesData";
@@ -58,7 +57,6 @@ function Home() {
   };
   return (
     <div>
-      <Header isDetails={false} />
       <span className="headingUpComingMovies">Upcoming Movies</span>
       <SingleLineImageList moviesData={state.moviesData} />
 

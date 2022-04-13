@@ -5,7 +5,6 @@ import {
   ImageListItem,
 } from "@material-ui/core";
 import React from "react";
-import Header from "../../common/header/Header";
 import "./Detail.css";
 
 import { Link, useLocation } from "react-router-dom";
@@ -18,8 +17,6 @@ const Detail = () => {
 
   return (
     <div className="detail">
-      <Header isDetails={true} />
-
       <Link to="/">
         <Typography className="backButton">&lt; Back to Home</Typography>
       </Link>

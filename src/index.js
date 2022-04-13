@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Header from "./common/header/Header";
 import "./index.css";
 
 import Detail from "./screens/Details/Detail";
@@ -8,6 +9,7 @@ import Home from "./screens/home/Home";
 
 ReactDOM.render(
   <Router>
+    <Header />
     <Routes>
       <Route exact path="/" element={<Home />} />
       <Route path="/details" element={<Detail />} />
