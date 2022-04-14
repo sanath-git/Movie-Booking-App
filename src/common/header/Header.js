@@ -32,6 +32,12 @@ function Header(props) {
     },
   };
 
+  const handleLoginLogout = () => {
+    if (userLoggedIn) {
+      setUserLoggedIn(false);
+      closeModal();
+    }
+  };
   const handleUpdateUser = (user) => {
     setUser(user);
   };
@@ -63,7 +69,10 @@ function Header(props) {
         <Button
           className="loginLogoutButton"
           variant="contained"
-          onClick={() => setIsModalOpen(true)}
+          onClick={() => {
+            setIsModalOpen(true);
+            handleLoginLogout();
+          }}
         >
           {userLoggedIn ? "LOGOUT" : "LOGIN"}
         </Button>
